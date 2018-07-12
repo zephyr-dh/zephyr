@@ -1,0 +1,54 @@
+# 头部菜单，title: link
+menu:
+  Whoami: /whoami
+  Github: https://github.com/zephyr-dh
+  WeChat: /wechat
+
+# 是否显示目录
+TOC: true
+
+# 是否自动播放音乐
+autoplay: false
+
+# 默认音乐
+mp3: http://link.hhtjim.com/163/425570952.mp3
+
+# 首页封面图, 为空时取文章的cover作为封面
+welcome_cover: https://picsum.photos/1600/900/?random
+
+# 默认文章封面图
+cover: https://picsum.photos/800/450/?random
+
+# 是否关闭默认滚动条
+scrollbar: true
+
+# Gitalk 评论插件（https://github.com/gitalk/gitalk）
+gitalk:
+    # 是否自动展开评论框
+    autoExpand: false
+    # 应用编号
+    clientID: '992d745b5f458c188786'
+    # 应用秘钥
+    clientSecret: '2fcd42c37fedc5b8cea42c222928640918966b4b'
+    # issue仓库名
+    repo: 'zephyr'
+    # Github名
+    owner: 'zephyr-dh'
+    # Github名
+    admin: ['zephyr-dh']
+    # Ensure uniqueness and length less than 50
+    id: location.pathname
+    # Facebook-like distraction free mode
+    distractionFreeMode: false
+
+# 网站关键字
+keywords: zephyr,和风
+
+# 要使用google_analytics进行统计的话，这里需要配置ID
+google_analytics: 
+
+# 网站ico
+favicon: /img/favicon.png
+
+# rss文件
+rss: atom.xml
