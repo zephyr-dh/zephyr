@@ -1,0 +1,160 @@
+
+<!DOCTYPE html>
+<html lang="" class="loading">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>星辰大海·风雨兼程</title>
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="google" content="notranslate" />
+    <meta name="keywords" content="zephyr,和风,"> 
+    
+    <meta name="author" content="Zephyr"> 
+    <link rel="alternative" href="atom.xml" title="星辰大海·风雨兼程" type="application/atom+xml"> 
+    <link rel="icon" href="/img/favicon.png"> 
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+    <link rel="stylesheet" href="/css/diaspora.css">
+
+</head>
+
+<body class="loading">
+    <div id="loader"></div>
+    <div id="single">
+    <div id="top" style="display: block;">
+    <div class="bar" style="width: 0;"></div>
+    <a class="icon-home image-icon" href="javascript:;"></a>
+    <div title="播放/暂停" class="icon-play"></div>
+    <h3 class="subtitle">从Java stream到Monad</h3>
+    <div class="social">
+        <!--<div class="like-icon">-->
+            <!--<a href="javascript:;" class="likeThis active"><span class="icon-like"></span><span class="count">76</span></a>-->
+        <!--</div>-->
+        <div>
+            <div class="share">
+                <a title="获取二维码" class="icon-scan" href="javascript:;"></a>
+            </div>
+            <div id="qr"></div>
+        </div>
+    </div>
+    <div class="scrollbar"></div>
+</div>
+    <div class="section">
+        <div class="article">
+    <div class='main'>
+        <h1 class="title">从Java stream到Monad</h1>
+        <div class="stuff">
+            <span>七月 31, 2018</span>
+            
+  <ul class="post-tags-list"><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/Java-stream/">Java stream</a></li><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/Monad/">Monad</a></li></ul>
+
+
+        </div>
+        <div class="content markdown">
+            <h3 id="从Java-stream到Monad"><a href="#从Java-stream到Monad" class="headerlink" title="从Java stream到Monad"></a>从Java stream到Monad</h3><p>​    在Java中，就算初学Java的小伙伴对stream的概念应该也不陌生，因为stream这个名词在Java I/O中被广泛应用。当时大家的理解应该是：stream是一组有顺序的，有起点和终点的字节集合，是对数据传输的总称或抽象 。 但是在今天我们讲的stream和I/O中的概念完全不同，这里我们先Stream入手，学习<a href="https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html" target="_blank" rel="noopener">Stream API</a>的具体使用，然后再引入一个抽象的概念<a href="https://en.wikipedia.org/wiki/Monad_%28functional_programming%29" target="_blank" rel="noopener">Monad</a>,从理论上理解Stream的原理和设计思想，让你对什么是函数是编程初窥门径。</p>
+<p>​    首先小伙伴们要明白，我们操作stream的目的其实和操作collection一样，通过对一个集合中的元素进行计算，得到一个新的元素集合。</p>
+<blockquote>
+<p>In <a href="https://en.wikipedia.org/wiki/Functional_programming" target="_blank" rel="noopener">functional programming</a>, a <strong>monad</strong> is a <a href="https://en.wikipedia.org/wiki/Design_pattern" target="_blank" rel="noopener">design pattern</a> that defines how functions, operations, inputs, and outputs can be used together to build <a href="https://en.wikipedia.org/wiki/Parameterized_type" target="_blank" rel="noopener">generic types</a>,<a href="https://en.wikipedia.org/wiki/Monad_%28functional_programming%29#cite_note-1" target="_blank" rel="noopener">[1]</a> with the following organization:</p>
+<ol>
+<li>Define a data type, and how values of that data type are combined.</li>
+<li>Create functions that use the data type, and compose them together into operations, following the rules defined in the first step.</li>
+</ol>
+</blockquote>
+<p>​    上面的引用出自wikpedia,说了一大堆，相信大家都不想看，我也没看懂，但是上面明确说了<strong>monad is a design pattern</strong>. 那么问题来了，什么又是design pattern？我们继续点开连接查看：</p>
+<blockquote>
+<p>A <strong>design pattern</strong> is the re-usable form of a solution to a design problem.</p>
+</blockquote>
+<p>The lowercase <a href="https://en.wikipedia.org/wiki/Greek_alphabet" target="_blank" rel="noopener">Greek</a> letter λ (<a href="https://en.wikipedia.org/wiki/Lambda" target="_blank" rel="noopener">lambda</a>) is an unofficial symbol of the field of programming language theory.  </p>
+
+            <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
+            <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="false">
+                <source type="audio/mpeg" src="http://domain.com/awesome.mp3">
+            </audio>
+        </div>
+        
+    <div id='gitalk-container' class="comment link"
+        data-ae='false'
+        data-ci='992d745b5f458c188786'
+        data-cs='2fcd42c37fedc5b8cea42c222928640918966b4b'
+        data-r='zephyr'
+        data-o='zephyr-dh'
+        data-a='zephyr-dh'
+        data-d='false'
+    >查看评论</div>
+
+
+    </div>
+    
+      <div class='side'>
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#从Java-stream到Monad"><span class="toc-number">1.</span> <span class="toc-text">从Java stream到Monad</span></a></li></ol>
+      </div>
+    
+</div>
+
+
+    </div>
+</div>
+</body>
+<script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+<script src="//lib.baomitu.com/jquery/1.8.3/jquery.min.js"></script>
+<script src="/js/plugin.js"></script>
+<script src="/js/diaspora.js"></script>
+<link rel="stylesheet" href="/photoswipe/photoswipe.css">
+<link rel="stylesheet" href="/photoswipe/default-skin/default-skin.css">
+<script src="/photoswipe/photoswipe.min.js"></script>
+<script src="/photoswipe/photoswipe-ui-default.min.js"></script>
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <!--  Controls are self-explanatory. Order can be changed. -->
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+</html>
